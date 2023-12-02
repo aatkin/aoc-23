@@ -15,5 +15,5 @@
   :nextjournal/clerk {:exec-fn nextjournal.clerk/build!
                       ;; notebooks to be built, accepts globs patterns
                       :exec-args {:paths ["notebooks/day_*"]
-                                  :index "index.clj"}
+                                  :index "notebooks/index.clj"}
                       :main-opts ["-m" "babashka.cli.exec"]}}}
