@@ -1,0 +1,19 @@
+{:paths ["notebooks" "datasets"]
+ :deps {dev.weavejester/medley {:mvn/version "1.7.0"}
+        io.github.nextjournal/clerk {:mvn/version "0.15.957"}
+        org.babashka/cli {:mvn/version "0.7.52"}
+        tick/tick {:mvn/version "0.7.5"}}
+ :aliases
+ {:nrepl {:extra-deps {nrepl/nrepl {:mvn/version "1.1.0"}
+                       cider/cider-nrepl {:mvn/version "0.44.0"}}
+          ;; https://clojure.org/reference/repl_and_main
+          :main-opts ["-m" "nrepl.cmdline" ; namespace to find a -main function for execution
+                      "--middleware" "[cider.nrepl/cider-middleware]"]}
+  :dev {:extra-paths ["dev"]
+        :extra-deps {org.clojure/clojure {:mvn/version "1.12.0-alpha5"}
+                     org.clojure/tools.namespace {:mvn/version "1.4.4"}}}
+  :nextjournal/clerk {:exec-fn nextjournal.clerk/build!
+                      ;; notebooks to be built, accepts globs patterns
+                      :exec-args {:paths ["notebooks/day_*"]
+                                  :index "index.clj"}
+                      :main-opts ["-m" "babashka.cli.exec"]}}}
