@@ -8,3 +8,5 @@
 .clerk/
 
 node_modules
+
+public/build
