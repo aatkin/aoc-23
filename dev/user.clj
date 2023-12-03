@@ -6,7 +6,6 @@
   (repl/clear)
   (repl/refresh-all)
 
-  (clerk/serve! {:browse true
-                 :watch-paths ["notebooks"
-                               "index.clj"]})
+  (clerk/serve! {:browse? true
+                 :watch-paths ["notebooks" "index.clj"]})
   (clerk/clear-cache!))
