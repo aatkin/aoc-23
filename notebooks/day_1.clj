@@ -4,7 +4,7 @@
   (:require [clojure.string :as str]
             [nextjournal.clerk :as clerk]))
 
-;; # Day 1
+;; # Day 1: Trebuchet?!
 
 ;; ## Part 1
 
