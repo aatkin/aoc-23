@@ -5,7 +5,7 @@
 ;; # Advent of Code 2023
 
 ^{:nextjournal.clerk/visibility {:result :hide}}
-(def enabled #{1 2})
+(def enabled #{1 2 3})
 
 (clerk/html
  (into [:div.grid.gap-8.sm:grid-cols-4.md:grid-cols-5.py-2]

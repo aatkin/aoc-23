@@ -4,7 +4,7 @@
   (:require [clojure.string :as str]
             [nextjournal.clerk :as clerk]))
 
-;; # Day 2: Cube Conundrum
+;; # [Day 2: Cube Conundrum]((https://adventofcode.com/2023/day/2))
 
 ;; ## Part 1
 

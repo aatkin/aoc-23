@@ -4,7 +4,7 @@
   (:require [clojure.string :as str]
             [nextjournal.clerk :as clerk]))
 
-;; # Day 1: Trebuchet?!
+;; # [Day 1: Trebuchet?!]((https://adventofcode.com/2023/day/1))
 
 ;; ## Part 1
 
@@ -18,7 +18,7 @@
 ^{::clerk/visibility {:code :hide}}
 (clerk/html
  [:details
-  [:summary "On each line, the calibration value can be found by combining the first digit and the last digit (in that order) to form a single two-digit number."]
+  [:summary "Toggle puzzle description"]
 
   [:p "Something is wrong with global snow production, and you've been selected to take a look. The Elves have even given you a map; on it, they've used stars to mark the top fifty locations that are likely to be having problems."]
   [:p "You've been doing this long enough to know that to restore snow operations, you need to check all fifty stars by December 25th."]
@@ -75,7 +75,7 @@ example-input
 ^{::clerk/visibility {:code :hide}}
 (clerk/html
  [:details
-  [:summary "It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid \"digits\"."]
+  [:summary "Toggle puzzle description"]
 
   [:p "Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid \"digits\"."]
   [:p "Equipped with this new information, you now need to find the real first and last digit on each line. For example:"]

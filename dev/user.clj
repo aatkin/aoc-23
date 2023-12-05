@@ -8,4 +8,5 @@
 
   (clerk/serve! {:browse? true
                  :watch-paths ["notebooks"]})
+  (clerk/serve! {:watch-paths ["notebooks"]})
   (clerk/clear-cache!))
